@@ -20,7 +20,6 @@ class Maze:
         seed: The random seed used to generate the maze. The same seed produces the same maze.
     """
     def __init__(self, dimensions, seed):
-
         self.cases_img = []
         self.maze  = np.zeros(dimensions, dtype=np.int8)
         is_visited = np.zeros(dimensions, dtype=np.int8)
@@ -61,15 +60,17 @@ class Maze:
                 is_visited[cur_ind] = 1
             else:
                 historic.pop()
-        #  Load patterns for maze display :
-        img = pg.image.load("cases.png").convert_alpha()
-        for i in range(0, 128, 8):
-            self.cases_img.append(pg.Surface.subsurface(img, i, 0, 8, 8))
+       
 
     def display(self):
         """
         Create a picture of the maze :
         """
+         #  Load patterns for maze display :
+        img = pg.image.load("cases.png").convert_alpha()
+        for i in range(0, 128, 8):
+            self.cases_img.append(pg.Surface.subsurface(img, i, 0, 8, 8))
+            
         maze_img = pg.Surface((8*self.maze.shape[1], 8*self.maze.shape[0]), flags=pg.SRCALPHA)
         for i in range(self.maze.shape[0]):
             for j in range(self.maze.shape[1]):

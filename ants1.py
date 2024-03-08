@@ -219,7 +219,7 @@ if __name__ == "__main__":
 
     deb=time.time()
     pg.init()
-    size_laby = 25, 25
+    size_laby = 50, 50
     if len(sys.argv) > 2:
         size_laby = int(sys.argv[1]),int(sys.argv[2])
     resolution = size_laby[1]*8, size_laby[0]*8
@@ -237,7 +237,7 @@ if __name__ == "__main__":
     elif rank==1:
         nb_ants = size_laby[0]*size_laby[1]//4
 
-        max_life = 500
+        max_life = 2000
         if len(sys.argv) > 3:
             max_life = int(sys.argv[3])
 

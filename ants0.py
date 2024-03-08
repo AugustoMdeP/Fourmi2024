@@ -217,14 +217,14 @@ if __name__ == "__main__":
     import time
     deb=time.time()
     pg.init()
-    size_laby = 25, 25
+    size_laby = 50, 50
     if len(sys.argv) > 2:
         size_laby = int(sys.argv[1]),int(sys.argv[2])
 
     resolution = size_laby[1]*8, size_laby[0]*8
     screen = pg.display.set_mode(resolution)
     nb_ants = size_laby[0]*size_laby[1]//4
-    max_life = 500
+    max_life = 2000
     if len(sys.argv) > 3:
         max_life = int(sys.argv[3])
     pos_food = size_laby[0]-1, size_laby[1]-1

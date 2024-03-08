@@ -21,23 +21,23 @@ vetores = [
     # (4, 4.99),  # Vetor 1
     # (4, 11.36)   # Vetor 2
 
-    # (1, 5.32),  # Vetor 1
-    # (1, 11.99),  # Vetor 2
-    # (2, 6.52),  # Vetor 1
-    # (2, 12.28),   # Vetor 2
-    # (3, 5.20),  # Vetor 1
-    # (3, 12.57),   # Vetor 2
-    # (4, 5.05),  # Vetor 1
-    # (4, 11.75)   # Vetor 2
+    (1, 5.32),  # Vetor 1
+    (1, 11.99),  # Vetor 2
+    (2, 6.52),  # Vetor 1
+    (2, 12.28),   # Vetor 2
+    (3, 5.20),  # Vetor 1
+    (3, 12.57),   # Vetor 2
+    (4, 5.05),  # Vetor 1
+    (4, 11.75)   # Vetor 2
 
-    (1, 3.36),  # Vetor 1
-    (1, 22.65),  # Vetor 2
-    (2, 3.49),  # Vetor 1
-    (2, 23.92),   # Vetor 2
-    (3, 3.10),  # Vetor 1
-    (3, 23.20),   # Vetor 2
-    (4, 3.33),  # Vetor 1
-    (4, 26.04)   # Vetor 2
+    # (1, 3.36),  # Vetor 1
+    # (1, 22.65),  # Vetor 2
+    # (2, 3.49),  # Vetor 1
+    # (2, 23.92),   # Vetor 2
+    # (3, 3.10),  # Vetor 1
+    # (3, 23.20),   # Vetor 2
+    # (4, 3.33),  # Vetor 1
+    # (4, 24.04)   # Vetor 2
 ]
 # Cores para cada ponto
 cores = ['r' if i % 2 != 0 else 'b' for i in range(len(vetores))]
